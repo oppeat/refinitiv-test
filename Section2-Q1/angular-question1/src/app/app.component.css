@@ -1,0 +1,22 @@
+.container {
+    min-width: 600px !important;
+    height: 100vh;
+    overflow-y: hidden;
+    min-height: 100vh !important;
+  }
+  
+  .item {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 1em;
+  }
+  
+  .item-1 {
+  }
+  
+  .item-2 {
+    min-width: 100px !important;
+  }
+  
+  .item-3 {
+  }

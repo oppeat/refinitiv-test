@@ -1,0 +1,27 @@
+<div class="container"
+     fxLayout="row"
+     fxLayoutAlign="center"
+     fxLayoutGap.xs="0"
+     fxFlexFill
+>
+  <div class="item item-1"
+       fxFlex="200px"
+  >
+    <input type="number" (input)="onSearchChange($event)" [value]="data.input">
+  </div>
+  <div class="item item-2"
+       fxFlex
+  >
+    <select class='select-option' (change)="onOptionsSelected($event)">
+      <option class='option' *ngFor='let option of options' [value]="option.value" [selected]="data.type === option.value">{{option.text}}</option>
+    </select>
+  </div>
+  <div class="item item-3"
+       fxFlex="300px"
+       fxFlexOrder="3"
+  >
+    {{ data.isValid }}
+  </div>
+</div>
+
+<router-outlet></router-outlet>
